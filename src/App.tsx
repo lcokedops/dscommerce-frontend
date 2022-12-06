@@ -8,9 +8,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ClientHome />}>
-        <Route index element={<Catalog />} />
+          <Route index element={<Catalog />} />
           <Route path="catalog" element={<Catalog />} />
-          <Route path="product-details" element={<ProductDeatils />} />
+          <Route path="product-details/:productId" element={<ProductDeatils />} />
         </Route>
       </Routes>
     </BrowserRouter>
